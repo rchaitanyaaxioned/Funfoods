@@ -102,21 +102,49 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 
+/*for container*/
+.container {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  margin: 5% 33%;
+  background-color: #666;
+  background-image: url(/assets/Images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #787878;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 86%; 
+  width: 100%; 
   margin: 0 auto;
+  background: transparent;
 }
 /*=================================
   Header styling starts here
 =================================*/
+.logo {
+  background: transparent;
+  background-color: #666;
+}
 
+.logo figure {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
 
-
-
-
-
+.logo figure img {
+  background: transparent;
+  width: 30%;
+  height: 20%;
+  margin: 10% 0;
+}
 /*=================================
   Header styling ends here
 =================================*/  
