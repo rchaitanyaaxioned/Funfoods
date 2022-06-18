@@ -104,12 +104,12 @@ li {
 
 /*for container*/
 .container {
-  width: 35%;
-  height: auto;
+  width: 25%;
+  height: 650px;
   display: flex;
   flex-direction: column;
   background: transparent;
-  margin: 5% 33%;
+  margin: 3% 38%;
   background-color: #666;
   background-image: url(/assets/Images/bg.jpg);
   background-position: center;
@@ -128,6 +128,10 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  background: transparent;
+}
+
 .logo {
   background: transparent;
   background-color: #666;
@@ -152,8 +156,42 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+main {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
 
+main section div {
+  background: transparent;
+}
 
+main > section > .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-img {
+  animation-name: funfoods;
+  bottom: 0;
+}
+
+.first-screen,.second-screen,.third-screen,.fourth-scrren {
+  display: none;
+}
+
+@keyframes funfoods {
+  0%   {
+    .first-screen,.second-screen,.third-screen,.fourth-scrren {
+      display: none;
+    }
+  }
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
 
 
 
