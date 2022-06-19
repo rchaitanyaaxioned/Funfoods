@@ -299,10 +299,16 @@ main>section .wrapper {
 /*styling for table start here*/
 .table-img {
   width: 100%;
-  bottom: 15%;
+  height: 40%;
+  bottom: -6%;
   animation-name: table-fade-in;
   animation-duration: 2s;
   position: absolute;
+}
+
+.table-img>img {
+  width: 100%;
+  height: 50%;
 }
 
 @keyframes table-fade-in {
@@ -317,141 +323,216 @@ main>section .wrapper {
   }
 }
 
-/*styling for table end here*/
-/*styling for first screen start here*/
-.first-screen {
-  /*visibility: hidden;
-  animation-name: first-screen;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 2s;
-  position: relative;*/
+.animation-main {
   width: 100%;
-  height: 95%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+}
+
+.bs-heading {
   display: none;
-  /* animation: slide-headings 5s forwards 0.5s;
-  animation: slide-sad-sonali 5s forwards 0.5s;
-  animation: slide 5s forwards 0.5s;
-  animation: fade-out 15s forwards 0.5s;*/
-}
-
-.fs-headings {
   position: absolute;
-  left: -400px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 40px;
   color: #F00;
+  width: 30%;
   text-transform: capitalize;
-  animation: slide-headings 7s forwards;
-  animation-timing-function: ease-in-out animation-delay: 0.7s;
+  font-size: 40px;
+  text-align: center;
+  left: -40%;
+  right: 20%;
+  animation-name: bs-heading-slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
 }
 
-.first-screen .sad-sonali {
+.heading-break::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.sad-sonali {
+  display: none;
   position: absolute;
   width: 60%;
-  right: -400px;
-  bottom: 35%;
-  animation: slide-sad-sonali 7s forwards;
-  animation-timing-function: ease-in-out animation-delay: 0.7s;
+  right: -60%;
+  bottom: 32%;
+  animation-name: sad-sonali-slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
 }
 
-.first-screen .plate {
+.plate {
+  display: none;
+  position: absolute;
+  width: 78%;
+  bottom: 20%;
+  left: -85%;
+  animation-name: plate-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+}
+
+.bgs-headings {
+  display: none;
+}
+
+.happy-sonali {
+  display: none;
+}
+
+.sandwich-lb {
   position: absolute;
   width: 75%;
-  bottom: 22%;
-  left: -400px;
-  animation: slide 10s forwards;
-  animation-timing-function: ease-in-out animation-delay: 0.3s;
+  bottom: 20%;
+  left: -75%;
+  animation-name: lb-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes slide {
-  15% {
-    left: 0;
-    animation-duration: 10s;
-  }
-
-  80% {
-    left: -400px;
-  }
+.sandwich-f {
+  position: absolute;
+  width: 45%;
+  bottom: 25%;
+  left: -50%;
+  animation-name: f-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
-@keyframes slide-headings {
-  25% {
-    left: 29%;
+.sandwich-up {
+  position: absolute;
+  width: 46%;
+  bottom: 29%;
+  left: -1%;
+  animation-name: ub-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.knife {
+  display: none;
+}
+
+.mayo-layer {
+  display: none;
+}
+
+.ffms-heading {
+  display: none;
+}
+
+.chef {
+  display: none;
+}
+
+.fmdm-headings {
+  display: none;
+}
+
+.get-recipe {
+  display: none;
+}
+
+.chef-hat {
+  display: none;
+}
+
+.mayo-bottel {
+  display: none;
+}
+
+@keyframes plate-slide {
+  0% {
+    left: -85%;
+  }
+
+  30% {
+    left: -10%;
   }
 
   100% {
-    left: -400px;
+    left: -85%;
   }
 }
 
-@keyframes slide-sad-sonali {
-  25% {
+@keyframes sad-sonali-slide {
+  0% {
+    right: -60%;
+  }
+
+  50% {
     right: 0;
   }
 
   100% {
-    right: -400px;
+    right: -60%;
   }
 }
 
-/*styling for first screen end here*/
-/*
-@keyframes fade-out {
+@keyframes bs-heading-slide {
   0% {
-    animation: slide-headings 5s forwards 0.5s;
+    left: -40%;
   }
 
   50% {
-    animation: slide-sad-sonali 5s forwards 0.5s;
-  }
-
-  75% {
-    animation: slide 5s forwards 0.5s;
+    left: 30%;
   }
 
   100% {
-    visibility: hidden;
+    left: -40%;
   }
 }
-*/
-/*
-@keyframes first-screen {
+
+@keyframes lb-slide {
   0% {
-    visibility: hidden;
+    left: -75%;
   }
 
   50% {
-    visibility: visible;
+    left: -15%;
   }
 
   100% {
-    visibility: hidden;
+    left: -15%;
   }
 }
-*/
-/*styling for second screen start here*/
-.second-screen {
-  width: 100%;
-  height: 95%;
-  display: flex;
-  flex-direction: column;
+
+@keyframes f-slide {
+  0% {
+    left: -50%;
+  }
+
+  50% {
+    left: -1%;
+  }
+
+  100% {
+    left: -1%;
+  }
 }
 
-.second-screen figure {
-  width: 30%;
-  height: 30%;
-}
+@keyframes ub-slide {
+  0% {
+    left: -45%;
+  }
 
-/*styling for second screen end here*/
-.third-screen {
-  display: none;
-}
+  50% {
+    left: -1%;
+  }
 
-.fourth-scrren {
-  display: none;
+  100% {
+    left: -1%;
+  }
 }
 
 /*=================================
