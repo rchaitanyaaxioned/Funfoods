@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,23 +98,38 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
 input[type='button'],
 input[type='submit'],
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
 strong {
   font-weight: bold;
@@ -48,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -64,8 +155,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -76,8 +172,13 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -85,22 +186,40 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
   display: inline-block;
   list-style-type: none;
 }
+
 /* Common styling */
-.grey { color: #666; }
-.cap { text-transform: capitalize; }
-.up { text-transform: uppercase; }
-.center { text-align: center; }
-.bold { font-weight: bold; }
-.transition { transition: 1s all ease; }
+.grey {
+  color: #666;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transition {
+  transition: 1s all ease;
+}
 
 /*for container*/
 body {
@@ -113,13 +232,14 @@ body {
 
 .container {
   width: 30%;
-  height: 40%;
+  height: 700px;
+  bottom: 0;
   margin: 2% 0;
   overflow: hidden;
   background-image: url(/assets/Images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  
+  background-size: cover;
 }
 
 /*.container {
@@ -140,16 +260,17 @@ body {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 100%; 
+  width: 100%;
   margin: 0 auto;
   background: transparent;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
 header {
   background: transparent;
- /* position: absolute;
+  /* position: absolute;
   top: 0;
   left: 35%;
   right: 20%;
@@ -194,11 +315,144 @@ header {
 */
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
+main,
+section {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+main>section .wrapper {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: relative;
+}
+
+.table-img {
+  width: 100%;
+  bottom: 15%;
+  animation-name: table-fade-in;
+  animation-duration: 2s;
+  position: absolute;
+}
+
+@keyframes table-fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.first-screen {
+  /*visibility: hidden;
+  animation-name: first-screen;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  position: relative;*/
+  width: 100%;
+  height: 95%;
+}
+
+.fs-headings {
+  position: absolute;
+  left: -400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 40px;
+  color: #F00;
+  text-transform: capitalize;
+  animation: slide-headings 5s forwards;
+  animation-delay: 0.5s;
+}
+
+.first-screen .sad-sonali {
+  position: absolute;
+  width: 60%;
+  right: -400px;
+  bottom: 35%;
+  animation: slide-sad-sonali 5s forwards;
+  animation-delay: 0.5s;
+}
+
+.first-screen .plate {
+  position: absolute;
+  width: 75%;
+  bottom: 22%;
+  left: -400px;
+  animation: slide 5s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slide {
+  50% {
+    left: 0;
+    animation-duration: 10s;
+  }
+
+  100% {
+    left: -400px;
+  }
+}
+
+@keyframes slide-headings {
+  50% {
+    left: 29%;
+  }
+
+  100% {
+    left: -400px;
+  }
+}
+
+@keyframes slide-sad-sonali {
+  50% {
+    right: 0;
+  }
+
+  100% {
+    right: -400px;
+  }
+}
+
+@keyframes first-screen {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+.second-screen {
+  display: none;
+}
+
+.third-screen {
+  display: none;
+}
+
+.fourth-scrren {
+  display: none;
+}
+
 /*
 main {
   background-color: aqua;
@@ -248,7 +502,7 @@ main > section > .wrapper {
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
 
 
@@ -256,14 +510,10 @@ main > section > .wrapper {
 
 
 
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+@media only screen and (max-width: 995px) {}
