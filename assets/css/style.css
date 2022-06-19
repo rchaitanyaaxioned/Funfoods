@@ -296,6 +296,7 @@ main>section .wrapper {
   position: relative;
 }
 
+/*styling for table start here*/
 .table-img {
   width: 100%;
   bottom: 15%;
@@ -316,6 +317,8 @@ main>section .wrapper {
   }
 }
 
+/*styling for table end here*/
+/*styling for first screen start here*/
 .first-screen {
   /*visibility: hidden;
   animation-name: first-screen;
@@ -325,6 +328,11 @@ main>section .wrapper {
   position: relative;*/
   width: 100%;
   height: 95%;
+  display: none;
+  /* animation: slide-headings 5s forwards 0.5s;
+  animation: slide-sad-sonali 5s forwards 0.5s;
+  animation: slide 5s forwards 0.5s;
+  animation: fade-out 15s forwards 0.5s;*/
 }
 
 .fs-headings {
@@ -336,8 +344,8 @@ main>section .wrapper {
   font-size: 40px;
   color: #F00;
   text-transform: capitalize;
-  animation: slide-headings 5s forwards;
-  animation-delay: 0.5s;
+  animation: slide-headings 7s forwards;
+  animation-timing-function: ease-in-out animation-delay: 0.7s;
 }
 
 .first-screen .sad-sonali {
@@ -345,8 +353,8 @@ main>section .wrapper {
   width: 60%;
   right: -400px;
   bottom: 35%;
-  animation: slide-sad-sonali 5s forwards;
-  animation-delay: 0.5s;
+  animation: slide-sad-sonali 7s forwards;
+  animation-timing-function: ease-in-out animation-delay: 0.7s;
 }
 
 .first-screen .plate {
@@ -354,23 +362,23 @@ main>section .wrapper {
   width: 75%;
   bottom: 22%;
   left: -400px;
-  animation: slide 5s forwards;
-  animation-delay: 0.3s;
+  animation: slide 10s forwards;
+  animation-timing-function: ease-in-out animation-delay: 0.3s;
 }
 
 @keyframes slide {
-  50% {
+  15% {
     left: 0;
     animation-duration: 10s;
   }
 
-  100% {
+  80% {
     left: -400px;
   }
 }
 
 @keyframes slide-headings {
-  50% {
+  25% {
     left: 29%;
   }
 
@@ -380,7 +388,7 @@ main>section .wrapper {
 }
 
 @keyframes slide-sad-sonali {
-  50% {
+  25% {
     right: 0;
   }
 
@@ -389,6 +397,27 @@ main>section .wrapper {
   }
 }
 
+/*styling for first screen end here*/
+/*
+@keyframes fade-out {
+  0% {
+    animation: slide-headings 5s forwards 0.5s;
+  }
+
+  50% {
+    animation: slide-sad-sonali 5s forwards 0.5s;
+  }
+
+  75% {
+    animation: slide 5s forwards 0.5s;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+*/
+/*
 @keyframes first-screen {
   0% {
     visibility: hidden;
@@ -402,11 +431,21 @@ main>section .wrapper {
     visibility: hidden;
   }
 }
-
+*/
+/*styling for second screen start here*/
 .second-screen {
-  display: none;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
 }
 
+.second-screen figure {
+  width: 30%;
+  height: 30%;
+}
+
+/*styling for second screen end here*/
 .third-screen {
   display: none;
 }
