@@ -412,9 +412,14 @@ main>section .wrapper {
   width: 46%;
   bottom: 29%;
   left: -1%;
-  animation-name: ub-slide;
+  /*animation-name: ub-slide;
   animation-duration: 4s;
   animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;*/
+  animation-name: berad-up;
+  animation-duration: 4s;
+  animation-timing-function: linear;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
@@ -424,7 +429,15 @@ main>section .wrapper {
 }
 
 .mayo-layer {
-  display: none;
+  position: absolute;
+  width: 46%;
+  bottom: 28%;
+  left: -1%;
+  animation-name: mayo-visibility;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .ffms-heading {
@@ -532,6 +545,32 @@ main>section .wrapper {
 
   100% {
     left: -1%;
+  }
+}
+
+@keyframes berad-up {
+  0% {
+    bottom: 29%;
+  }
+
+  50% {
+    bottom: 35%;
+  }
+
+  100% {
+    bottom: 35%;
+  }
+}
+
+@keyframes mayo-visibility {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
