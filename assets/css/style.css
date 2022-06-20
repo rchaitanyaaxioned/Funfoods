@@ -232,10 +232,11 @@ body {
 
 .container {
   width: 30%;
-  height: 700px;
+  height: 630px;
   bottom: 0;
   margin: 2% 0;
   overflow: hidden;
+  border: 1px solid #6C5E55;
   background-image: url(/assets/Images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -302,7 +303,7 @@ main>section .wrapper {
   height: 40%;
   bottom: -6%;
   animation-name: table-fade-in;
-  animation-duration: 2s;
+  animation-duration: 1s;
   position: absolute;
 }
 
@@ -331,19 +332,18 @@ main>section .wrapper {
 }
 
 .bs-heading {
-  display: none;
   position: absolute;
   color: #F00;
-  width: 30%;
+  width: 100%;
   text-transform: capitalize;
   font-size: 40px;
   text-align: center;
-  left: -40%;
+  left: -75%;
   right: 20%;
   animation-name: bs-heading-slide;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .heading-break::before {
@@ -352,42 +352,54 @@ main>section .wrapper {
 }
 
 .sad-sonali {
-  display: none;
   position: absolute;
   width: 60%;
   right: -60%;
   bottom: 32%;
   animation-name: sad-sonali-slide;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 .plate {
-  display: none;
   position: absolute;
   width: 78%;
   bottom: 20%;
   left: -85%;
   animation-name: plate-slide;
-  animation-duration: 4s;
-  animation-timing-function: ease;
+  animation-duration: 4.3s;
+  animation-timing-function: ease-in-out;
   animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .bgs-headings {
-  display: none;
+  position: absolute;
+  color: #F00;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 40px;
+  text-align: center;
+  left: -85%;
+  right: 20%;
+  animation-name: bgs-heading-slide;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  animation-delay: 7s;
+  animation-fill-mode:forwards;
 }
 
 .happy-sonali {
   position: absolute;
   width: 60%;
   right: -60%;
-  bottom: 32%;
+  bottom: 34%;
   animation-name: happy-sonali-slide;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-timing-function: ease;
-  animation-delay: 1s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
 }
 
 .sandwich-lb {
@@ -396,9 +408,9 @@ main>section .wrapper {
   bottom: 20%;
   left: -75%;
   animation-name: lb-slide;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-timing-function: ease;
-  animation-delay: 0.3s;
+  animation-delay: 4.4s;
   animation-fill-mode: forwards;
 }
 
@@ -406,11 +418,11 @@ main>section .wrapper {
   position: absolute;
   width: 45%;
   bottom: 25%;
-  left: -50%;
+  left:-50%;
   animation-name: f-slide;
-  animation-duration: 4s;
+  animation-duration: 8s;
   animation-timing-function: ease;
-  animation-delay: 0.3s;
+  animation-delay: 4.4s;
   animation-fill-mode: forwards;
 }
 
@@ -418,66 +430,133 @@ main>section .wrapper {
   position: absolute;
   width: 46%;
   bottom: 29%;
-  left: -1%;
-  /*animation-name: ub-slide;
-  animation-duration: 4s;
+  left: -50%;
+  z-index: 1;
+  animation-name: ub-slide;
+  animation-duration: 8s;
   animation-timing-function: ease;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;*/
-  animation-name: berad-up;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-delay: 0.3s;
+  animation-delay: 4.4s;
   animation-fill-mode: forwards;
 }
 
 .knife {
+  visibility: hidden;
   position: absolute;
   width: 35%;
   bottom: 28%;
   left: 1%;
   z-index: 1;
-  transform: rotateZ(-56deg);
+  transform: rotateZ(-52deg);
   animation-name: knife-slide;
-  animation-duration: 4s;
+  animation-duration: 1s;
   animation-timing-function: ease;
-  animation-delay: 2s;
+  animation-delay: 5.5s;
 }
 
 .mayo-layer {
+  visibility: hidden;
   position: absolute;
   width: 46%;
   bottom: 28%;
   left: -1%;
   animation-name: mayo-visibility;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-delay: 0.3s;
+  animation-duration: 8.5s;
+  animation-timing-function:ease;
+  animation-delay: 3.9s;
   animation-fill-mode: forwards;
 }
 
 .ffms-heading {
-  display: none;
+  position: absolute;
+  color: #F00;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 35px;
+  text-align: center;
+  left: -95%;
+  right: 0;
+  animation-name: ffms-heading-slide;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
 }
 
 .chef {
-  display: none;
+  position: absolute;
+  width: 60%;
+  right: -60%;
+  bottom: 34%;
+  animation-name: chef-slide;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
 }
 
 .fmdm-headings {
-  display: none;
+  position: absolute;
+  color: #F00;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 40px;
+  text-align: center;
+  top: 2%;
+  left: -85%;
+  animation-name: fmdm-heading-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+
+}
+
+.get-recipe a {
+  font-size: 20px;
+  color: #FFF;
+  text-transform: capitalize;
+  background-color: #5D3D5E;
+  padding: 10px;
+  border: 1px solid #5D3D5E;
+  border-radius: 4px;
+
 }
 
 .get-recipe {
-  display: none;
+  position: absolute;
+  width: 100%;
+  left: -40%;
+  top: 20%;
+  animation-name: get-recipe-slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
 }
 
 .chef-hat {
-  display: none;
+  position: absolute;
+  width: 42%;
+  z-index: 1;
+  left: -45%;
+  top: 18%;
+  animation-name: chef-hat-slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
 }
 
 .mayo-bottel {
-  display: none;
+  position: absolute;
+  width: 35%;
+  bottom: 21%;
+  left: 105%;
+  animation-name: mayo-bottel-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes plate-slide {
@@ -485,7 +564,11 @@ main>section .wrapper {
     left: -85%;
   }
 
-  30% {
+  10% {
+    left: -10%;
+  }
+
+  90%{
     left: -10%;
   }
 
@@ -499,7 +582,11 @@ main>section .wrapper {
     right: -60%;
   }
 
-  50% {
+  10% {
+    right: 0;
+  }
+
+  90% {
     right: 0;
   }
 
@@ -510,15 +597,19 @@ main>section .wrapper {
 
 @keyframes bs-heading-slide {
   0% {
-    left: -40%;
+    left: -75%;
   }
 
-  50% {
-    left: 30%;
+  10%{
+    left: 0;
+  }
+
+  90% {
+    left: 0;
   }
 
   100% {
-    left: -40%;
+    left: -75%;
   }
 }
 
@@ -527,12 +618,16 @@ main>section .wrapper {
     left: -75%;
   }
 
-  50% {
+  10%{
+    left:-15%;
+  }
+
+  90% {
     left: -15%;
   }
 
   100% {
-    left: -15%;
+    left: -75%;
   }
 }
 
@@ -541,54 +636,70 @@ main>section .wrapper {
     left: -50%;
   }
 
-  50% {
+  10% {
+    left: -1%;
+  }
+
+  90% {
     left: -1%;
   }
 
   100% {
-    left: -1%;
+    left: -50%;
   }
 }
 
 @keyframes ub-slide {
   0% {
-    left: -45%;
-  }
-
-  50% {
-    left: -1%;
-  }
-
-  100% {
-    left: -1%;
-  }
-}
-
-@keyframes berad-up {
-  0% {
+    left: -50%;
     bottom: 29%;
   }
 
-  50% {
+  10%{
+    left: -1%;
+    bottom: 29%;
+  }
+
+  15%{
+    left: -1%;
     bottom: 35%;
   }
 
-  100% {
+  30% {
+    left: -1%;
     bottom: 35%;
+  }
+
+  31%{
+    left: -1%;
+    bottom: 29%;
+  }
+
+  90% {
+    left: -1%;
+    bottom: 29%;
+  }
+
+  100% {
+    left: -50%;
+    bottom: 29%;
   }
 }
 
 @keyframes knife-slide {
   0% {
     left: 1%;
+    visibility: hidden;
   }
 
-  50% {
-    left: 28%;
+  10%{
+    left: 1%;
+    visibility: visible;
   }
 
   100% {
-    left: 1%;
+    left: 28%;
+    visibility: hidden;
   }
 }
 
@@ -596,25 +707,180 @@ main>section .wrapper {
   0% {
     visibility: hidden;
     opacity: 0;
+    left: -50%;
+  }
+
+  10%{
+    visibility: visible;
+    opacity: 0;
+    left: -1%;
+  }
+
+  47% {
+    visibility: visible;
+    opacity: 1;
+    left: -1%;
+  }
+
+  90% {
+    visibility: visible;
+    opacity: 1;
+    left: -1%;
   }
 
   100% {
     visibility: visible;
     opacity: 1;
+    left: -50%;
   }
 }
 
-@keyframes sad-sonali-slide {
+@keyframes happy-sonali-slide {
   0% {
     right: -60%;
   }
 
-  50% {
+  10% {
+    right: 0;
+  }
+
+  90% {
     right: 0;
   }
 
   100% {
     right: -60%;
+  }
+}
+
+@keyframes bgs-heading-slide {
+  0% {
+    left: -85%;
+  }
+
+  10%{
+    left: 0;
+  }
+
+  90% {
+    left: 0;
+  }
+
+  100% {
+    left: -85%;
+  }
+}
+
+@keyframes chef-slide {
+  0% {
+    right: -60%;
+  }
+
+  10% {
+    right: 0;
+  }
+
+  90% {
+    right: 0;
+  }
+
+  100% {
+    right: -60%;
+  }
+}
+
+@keyframes ffms-heading-slide {
+  0% {
+    left: -95%;
+  }
+
+  10% {
+    left: 0;
+  }
+
+  90% {
+    left: 0;
+  }
+
+  100% {
+    left: -95%;
+  }
+}
+
+@keyframes mayo-bottel-slide {
+  0%{
+    left: 105%;
+  }
+
+  10% {
+    left: 33%;
+  }
+
+  100%{
+    left: 33%;
+  }
+}
+
+@keyframes fmdm-heading-slide {
+  0% {
+    left: -85%;
+  }
+
+  10% {
+    left: 0;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes chef-hat-slide {
+  0%{
+    left: -45%;
+    top: 18%;
+  }
+
+  10%{
+    left: 36%;
+    top: 18%;
+  }
+
+  50%{
+    left: 36%;
+    top: 31%;
+  }
+
+  90%{
+    left: 36%;
+    top: 31%;
+  }
+
+  100%{
+    left: 36%;
+    top: 31%;
+  }
+}
+
+@keyframes get-recipe-slide{
+  0%{
+    left: -40%;
+    top: 2%;
+  }
+
+  30%{
+    left: -10%;
+    top: 3%;
+  }
+
+  70% {
+    left: 35%;
+    top: 20%;
+  }
+
+  100%{
+    left: 35%;
+    top: 20%;
   }
 }
 
