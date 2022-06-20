@@ -380,7 +380,14 @@ main>section .wrapper {
 }
 
 .happy-sonali {
-  display: none;
+  position: absolute;
+  width: 60%;
+  right: -60%;
+  bottom: 32%;
+  animation-name: happy-sonali-slide;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
 }
 
 .sandwich-lb {
@@ -425,7 +432,16 @@ main>section .wrapper {
 }
 
 .knife {
-  display: none;
+  position: absolute;
+  width: 35%;
+  bottom: 28%;
+  left: 1%;
+  z-index: 1;
+  transform: rotateZ(-56deg);
+  animation-name: knife-slide;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
 }
 
 .mayo-layer {
@@ -562,6 +578,20 @@ main>section .wrapper {
   }
 }
 
+@keyframes knife-slide {
+  0% {
+    left: 1%;
+  }
+
+  50% {
+    left: 28%;
+  }
+
+  100% {
+    left: 1%;
+  }
+}
+
 @keyframes mayo-visibility {
   0% {
     visibility: hidden;
@@ -571,6 +601,20 @@ main>section .wrapper {
   100% {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@keyframes sad-sonali-slide {
+  0% {
+    right: -60%;
+  }
+
+  50% {
+    right: 0;
+  }
+
+  100% {
+    right: -60%;
   }
 }
 
